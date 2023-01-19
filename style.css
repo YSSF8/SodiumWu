@@ -1,0 +1,98 @@
+body {
+    background-color: #111218;
+}
+
+.compile-hint {
+    position: fixed;
+    color: #fff;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #44475a;
+    padding: 9px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 15px;
+    user-select: none;
+    z-index: 1;
+    transition: top 200ms;
+}
+
+.nav-bar {
+    margin-top: -4px;
+    cursor: default;
+}
+
+.nav-bar button {
+    border: none;
+    background-color: #282a36;
+    color: #fff;
+    padding: 7px;
+    font-family: sans-serif;
+    border-top: 4px solid #44475a;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 7rem;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: background 200ms;
+}
+
+.nav-bar button:hover {
+    background-color: #1e202b;
+}
+
+.nav-bar button span {
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: ripple 700ms linear infinite;
+}
+
+@keyframes ripple {
+    0% {
+        opacity: .3;
+        width: 0;
+        height: 0;
+    }
+    100% {
+        opacity: 0;
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.panels {
+    display: flex;
+}
+
+.CodeMirror {
+    width: 6in;
+    margin-right: 5px;
+}
+
+.result {
+    width: calc(100% - 8px);
+    height: 4.07in;
+    border: 1px solid #6272a4;
+    margin-top: 5px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #282a36;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #44475a;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6272a4;
+}
