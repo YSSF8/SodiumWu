@@ -9,6 +9,7 @@ This is a simple yet powerful tool for web developers to quickly test and execut
 * Ripple effect on button clicks
 
 ## Usage
+* Open https://yssf8.github.io/SodiumWu
 * Write your HTML, CSS, and JS code in the respective text areas.
 * Click on the **Execute** button at the top, left corner of the page to run the scripts or you can you the keyboard shortcut **Ctrl + Enter**
 * Press the download button to download the HTML, CSS and JS files.
