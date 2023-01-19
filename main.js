@@ -29,12 +29,15 @@ document.querySelectorAll('.nav-bar button').forEach(btn => {
     btn.addEventListener('click', () => {
         if (/exec/gi.test(btn.innerHTML)) {
             result.contentWindow.location.reload();
-            result.contentDocument.head.innerHTML = `<style>${cssEditor.getValue()}</style>`;
-            result.contentDocument.body.innerHTML = htmlEditor.getValue();
 
-            const script = result.contentDocument.createElement('script');
-            script.innerText = jsEditor.getValue();
-            result.contentDocument.body.appendChild(script);
+            setTimeout(() => {
+                result.contentDocument.head.innerHTML = `<style>${cssEditor.getValue()}</style>`;
+                result.contentDocument.body.innerHTML = htmlEditor.getValue();
+    
+                const script = result.contentDocument.createElement('script');
+                script.innerText = jsEditor.getValue();
+                result.contentDocument.body.appendChild(script);
+            }, 100);
         } else {
             const blob = new Blob([result.contentDocument.documentElement.outerHTML], { type: 'text/html' });
 
