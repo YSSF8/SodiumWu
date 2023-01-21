@@ -6,7 +6,6 @@ This is a simple yet powerful tool for web developers to quickly test and execut
 * Code highlighting and automatic tag and bracket closing
 * Download your code as an HTML file
 * Shortcut key for quick execution
-* Ripple effect on button clicks
 
 ## Usage
 * Open https://yssf8.github.io/SodiumWu
